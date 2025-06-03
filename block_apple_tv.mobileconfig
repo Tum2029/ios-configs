@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadDisplayName</key>
+    <string>Block Apple TV Features</string>
+    <key>PayloadIdentifier</key>
+    <string>com.nova.block.appletv</string>
+    <key>PayloadType</key>
+    <string>com.apple.applicationaccess</string>
+    <key>PayloadUUID</key>
+    <string>00000000-0000-4000-8000-000000000001</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>familyControlsEnabled</key>
+            <true/>
+            <key>blacklistedAppBundleIDs</key>
+            <array>
+                <string>com.apple.tv</string>
+                <string>com.apple.TVRemote</string>
+                <string>tv.apple</string>
+                <string>tv.apple.connect</string>
+            </array>
+            <key>PayloadType</key>
+            <string>com.apple.applicationaccess</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.nova.block.appletv.appblock</string>
+            <key>PayloadUUID</key>
+            <string>00000000-0000-4000-8000-000000000002</string>
+            <key>PayloadDisplayName</key>
+            <string>Apple TV App Block</string>
+        </dict>
+    </array>
+</dict>
+</plist>
