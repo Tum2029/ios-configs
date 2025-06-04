@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>PayloadContent</key>
   <array>
-    <!-- Safari Configuration -->
     <dict>
       <key>PayloadType</key><string>com.apple.Safari</string>
       <key>PayloadIdentifier</key><string>com.example.safari.restrictions</string>
@@ -18,7 +17,7 @@
       <key>BlockCookies</key><string>AlwaysBlock</string>
       <key>SuppressesPasswordAutoFill</key><true/>
     </dict>
-    <!-- AirPlay / Screen Sharing -->
+    
     <dict>
       <key>PayloadType</key><string>com.apple.applicationaccess</string>
       <key>PayloadIdentifier</key><string>com.example.airplay</string>
@@ -30,7 +29,7 @@
       <key>allowScreenRecording</key><false/>
       <key>allowRemoteScreenObservation</key><false/>
     </dict>
-    <!-- mDNS / Bonjour Restriction -->
+    
     <dict>
       <key>PayloadType</key><string>com.apple.dnsProxy.managed</string>
       <key>PayloadIdentifier</key><string>com.example.mdns</string>
