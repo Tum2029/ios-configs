@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadContent</key>
+  <array>
+    
+    <!-- Safari Configuration -->
+    <dict>
+      <key>PayloadType</key><string>com.apple.Safari</string>
+      <key>PayloadIdentifier</key><string>com.example.safari.restrictions</string>
+      <key>PayloadDisplayName</key><string>Safari Restrictions</string>
+      <key>PayloadVersion</key><integer>1</integer>
+      <key>PayloadUUID</key><string>11111111-1111-1111-1111-111111111111</string>
+      <key>BlockPopups</key><true/>
+      <key>BlockAutoFill</key><true/>
+      <key>BlockJavaScript</key><false/>
+      <key>BlockCookies</key><string>AlwaysBlock</string>
+      <key>SuppressesPasswordAutoFill</key><true/>
+    </dict>
+
+    <!-- AirPlay / Screen Sharing -->
+    <dict>
+      <key>PayloadType</key><string>com.apple.applicationaccess</string>
+      <key>PayloadIdentifier</key><string>com.example.airplay</string>
+      <key>PayloadDisplayName</key><string>AirPlay Restriction</string>
+      <key>PayloadVersion</key><integer>1</integer>
+      <key>PayloadUUID</key><string>22222222-2222-2222-2222-222222222222</string>
+      <key>allowAirPlayIncomingRequests</key><false/>
+      <key>allowScreenShot</key><false/>
+      <key>allowScreenRecording</key><false/>
+      <key>allowRemoteScreenObservation</key><false/>
+    </dict>
+
+    <!-- mDNS / Bonjour Restriction -->
+    <dict>
+      <key>PayloadType</key><string>com.apple.dnsProxy.managed</string>
+      <key>PayloadIdentifier</key><string>com.example.mdns</string>
+      <key>PayloadDisplayName</key><string>Block mDNS</string>
+      <key>PayloadVersion</key><integer>1</integer>
+      <key>PayloadUUID</key><string>33333333-3333-3333-3333-333333333333</string>
+      <key>DNSProtocol</key><string>HTTPS</string>
+      <key>ProviderBundleIdentifier</key><string>com.apple.dnsProxy</string>
+      <key>ProviderConfiguration</key>
+      <dict>
+        <key>blockDomains</key>
+        <array>
+          <string>local.</string>
+          <string>.local</string>
+          <string>mdns</string>
+        </array>
+      </dict>
+    </dict>
+
+  </array>
+
+  <key>PayloadDisplayName</key><string>SafePad Config</string>
+  <key>PayloadIdentifier</key><string>com.example.config</string>
+  <key>PayloadRemovalDisallowed</key><false/>
+  <key>PayloadType</key><string>Configuration</string>
+  <key>PayloadUUID</key><string>99999999-9999-9999-9999-999999999999</string>
+  <key>PayloadVersion</key><integer>1</integer>
+</dict>
+</plist>
